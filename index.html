@@ -6,74 +6,78 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <header id="header">
+    <header id="header" class="header">
         <!-- navbarre du haut -->
-        <nav id="navbar">
-            <img id="logo" src="airbnb.png" alt="airbnb.png">
+        <nav id="navbar" class="navbar">
+            <img id="navbar__logo" class="navbar__logo" src="airbnb.png" alt="airbnb.png">
             <h1>airbnb</h1>
             <a href="#">Devenez hôte</a>
-            <img id="globe" src="globe.png" alt="globe.png">
-            <div id="MenuDeroulant">
-                <img src="connec.png" alt="connec.png">
+            <img id="navbar__globe" class="navbar__globe" src="globe.png" alt="globe.png">
+            <div id="navbar__MenuDeroulant" class="navbar__MenuDeroulant">
+                <img src="connec.png" class="navbar__MenuDeroulant__connec" id="MenuDeroulant__connec" alt="connec.png">
             </div>
         </nav>
         <!-- listing de titre de recherche -->
-        <ul>
-            <li id="">Hébergements</li>
-            <li id="">Expériences</li>
-            <li id="">Expériences en ligne</li>
+        <ul class="liste" id="liste">
+            <li id="liste__titre" class="liste__titre">Hébergements</li>
+            <li id="liste__titre" class="liste__titre">Expériences</li>
+            <li id="liste__titre" class="liste__titre">Expériences en ligne</li>
         </ul>
         <!-- menu de recherche -->
-        <div id="recherche">
-            <div id="">
+        <div id="recherche" class="recherche">
+
+            <div id="recherche__element" class="recherche__element">
                 <h2>Adresse</h2>
                 <p>Où allez vous ?</p>
             </div>
-            <div id="">
+            <div id="recherche__element" class="recherche__element">
                 <h2>Arrivée</h2>
                 <p>Quand ?</p>
             </div>
-            <div id="">
+            <div id="recherche__element" class="recherche__element">
                 <h2>Départ</h2>
                 <p>Quand ?</p>
             </div>
-            <div id="">
-                <h2>Voyageurs</h2>
-                <p>Qui ?</p>
+            <div id="recherche__element" class="recherche__element">
+                <div class="recherche__element__last" id="recherche__element__last">
+                    <h2>Voyageurs</h2>
+                    <p>Qui ?</p>
+                </div>
+                <button id="recherche__element__buttonSearch" class="recherche__element__buttonSearch">
+                    <img class="loupe" id="loupe" src="loupe.png" alt="loupe.png">
+                </button>
             </div>
-            <button id="buttonSearch">
-                <img src="loupe.png" alt="loupe.png">
-            </button>
         </div>
     </header>
 
     <!-- fin du header -->
-    <main id="main">
+    <main id="main" class="">
         <!-- première image-->
-        <section>
+        <section class="section1">
             <div id="firstimg">
-                <p id="titreImg">Vous ne savez pas où partir?</p><br>
-                <p id="titreImg"> Parfait.</p> <br>
-                <button id="buttonImgFirst">Je suis flexible</button>
+                <p id="firstimg__titreImg" class="firstimg__titreImg">Vous ne savez pas où partir?</p><br>
+                <p id="firstimg__titreImg" class="firstimg__titreImg"> Parfait.</p> <br>
+                <button id="firstimg__buttonImgFirst" class="firstimg__buttonImgFirst">Je suis flexible</button>
             </div>
             <!-- 2eme image -->
             <div id="secondImg">
-                <p id="texteSecondImg">Découvrez les</p><br>
+                <p id="secondImg__texteSecondImg" class="secondImg__texteSecondImg">Découvrez les</p><br>
                 <h3>Cartes cadeaux Airbnb</h3>
-                <button id="buttonSecondImg"> Acheter Maintenant</button>
+                <button id="buttonSecondImg" class="secondImg__buttonSecondImg"> Acheter Maintenant</button>
             </div>
         </section>
         <!-- 4 cards inline -->
-        <section id="section1">
+        <section id="section2">
             <h4>Des idées pour votre prochain voyage</h4>
-            <div id="">
-                <div id="cards1">
-                    <img id="img cards1" src="" alt="">
-                    <p id="titreImg"></p><br>
-                    <p id="texteCards"></p>
+            <div id="cards">
+                <div id="cards__1" class="cards__1">
+                    <img id="cards__1__imgCards1" class="cards__1__imgCards1" src="" alt="">
+                    <p id="cards__1__titreImg" class="cards__1__titreImg"></p><br>
+                    <p id="cards__1__texteCards" class="cards__1__texteCards"></p>
                 </div>
                 <div id="cards1">
                     <img id="img cards2" src="" alt="">
@@ -93,7 +97,7 @@
             </div>
         </section>
         <!-- cards deux aligné, une en dessous -->
-        <section id="section2">
+        <section id="section3">
             <h4>Découvrez les expériences Airbnb</h4>
             <div id="">
                 <div id="cardsSecond1">
@@ -117,7 +121,7 @@
             </div>
         </section>
         <!-- menu en fonction des endroits -->
-        <section id="section3">
+        <section id="section4">
             <h4>Des idées pour vos prochaines escapades</h4>
             <ul>
                 <li>Bord de mer</li>

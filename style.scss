@@ -1,0 +1,103 @@
+$headerColor: #000000;
+$mainColor:#ffffff;
+$footerColor:#afa7a7;
+$bordure: solid 1px black;
+$radius: 50px 50px 50px 50px;
+
+@mixin tailleSigle {
+    width: 30px;
+    height: 30px;
+
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    background-color: $headerColor;
+
+}
+
+h1 {
+    color: $mainColor;
+    display: inline-block;
+}
+
+.navbar {
+
+    &__logo {
+        width: 60px;
+        height: 60px;
+        display: inline-block;
+    }
+
+    &__globe {
+        @include tailleSigle();
+        display: inline-block;
+    }
+
+    &__MenuDeroulant {
+        background-color: $mainColor;
+        border-radius: $radius;
+        display: inline-block;
+
+        &__connec {
+            @include tailleSigle();
+            display: inline-block;
+        }
+    }
+}
+
+.liste {
+    list-style-type: none;
+    text-align: center;
+
+    &__titre {
+        color: $mainColor;
+        display: inline;
+        margin: 30px 0px 0px 30px;
+    }
+}
+
+.recherche {
+    width: 900px;
+    margin: 0 auto;
+    // margin-left: auto;
+    // margin-right: auto;
+    background-color: $mainColor;
+    border-radius: $radius;
+
+
+    &__element {
+        display: inline-block;
+        background-color: $mainColor;
+        width: 200px;
+        border: $bordure;
+
+
+        &__last {
+            display: inline-block;
+        }
+
+        &__buttonSearch {
+            width: 50px;
+            height: 50px;
+            border-radius: 100%;
+            background-color: red;
+
+
+            // &__loupe {
+            //     width: 20px;
+            //     height: 20px;
+            //     text-align: center;
+            // }
+        }
+    }
+}
+
+
+.loupe {
+    width: 20px;
+    height: 20px;
+}
