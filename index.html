@@ -13,12 +13,13 @@
     <header id="header" class="header">
         <!-- navbarre du haut -->
         <nav id="navbar" class="navbar">
-            <img id="navbar__logo" class="navbar__logo" src="airbnb.png" alt="airbnb.png">
+            <img id="navbar__logo" class="navbar__logo" src="image/airbnb.png" alt="airbnb.png">
             <h1>airbnb</h1>
-            <a href="#">Devenez hôte</a>
-            <img id="navbar__globe" class="navbar__globe" src="globe.png" alt="globe.png">
+            <a id="navbar__hote" class="navbar__hote" href="#">Devenez hôte</a>
+            <img id="navbar__globe" class="navbar__globe" src="image/globe.png" alt="globe.png">
             <div id="navbar__MenuDeroulant" class="navbar__MenuDeroulant">
-                <img src="connec.png" class="navbar__MenuDeroulant__connec" id="MenuDeroulant__connec" alt="connec.png">
+                <img src="image/connec.png" class="navbar__MenuDeroulant__connec" id="MenuDeroulant__connec"
+                    alt="connec.png">
             </div>
         </nav>
         <!-- listing de titre de recherche -->
@@ -48,7 +49,7 @@
                     <p>Qui ?</p>
                 </div>
                 <button id="recherche__element__buttonSearch" class="recherche__element__buttonSearch">
-                    <img class="loupe" id="loupe" src="loupe.png" alt="loupe.png">
+                    <img class="loupe" id="loupe" src="image/loupe.png" alt="loupe.png">
                 </button>
             </div>
         </div>
@@ -58,96 +59,133 @@
     <main id="main" class="">
         <!-- première image-->
         <section class="section1">
-            <div id="firstimg">
+            <div id="firstimg" class="firstimg">
                 <p id="firstimg__titreImg" class="firstimg__titreImg">Vous ne savez pas où partir?</p><br>
                 <p id="firstimg__titreImg" class="firstimg__titreImg"> Parfait.</p> <br>
                 <button id="firstimg__buttonImgFirst" class="firstimg__buttonImgFirst">Je suis flexible</button>
             </div>
             <!-- 2eme image -->
-            <div id="secondImg">
+            <div id="secondImg" class="secondImg">
                 <p id="secondImg__texteSecondImg" class="secondImg__texteSecondImg">Découvrez les</p><br>
                 <h3>Cartes cadeaux Airbnb</h3>
                 <button id="buttonSecondImg" class="secondImg__buttonSecondImg"> Acheter Maintenant</button>
             </div>
         </section>
-        <!-- 4 cards inline -->
-        <section id="section2">
-            <h4>Des idées pour votre prochain voyage</h4>
-            <div id="cards">
-                <div id="cards__1" class="cards__1">
-                    <img id="cards__1__imgCards1" class="cards__1__imgCards1" src="" alt="">
-                    <p id="cards__1__titreImg" class="cards__1__titreImg"></p><br>
-                    <p id="cards__1__texteCards" class="cards__1__texteCards"></p>
+        <article class="article" id="article">
+            <!-- 4 cards inline -->
+            <section id="section2" class="section2">
+                <h4>Des idées pour votre prochain voyage</h4>
+                <div id="cards" class="cards">
+                    <div class="cards__blocone">
+                        <img class="cards__blocone__img" src="image/deauville.jpg" alt="">
+                        <div class="cards__blocone__bas">
+                            <h5 class="">dsdsd</h5>
+                            <p>dsdsdsd</p>
+                        </div>
+                    </div>
+                    <div class="cards__bloctwo">
+                        <img class="cards__bloctwo__img" src="image/deauville.jpg" alt="">
+                        <div class="cards__bloctwo__bas">
+                            <h5 class="">dsdsd</h5>
+                            <p>dsdsdsd</p>
+                        </div>
+                    </div>
+                    <div class="cards__bloc3">
+                        <img class="cards__blocthree__img" src="image/deauville.jpg" alt="">
+                        <div class="cards__blocthree__bas">
+                            <h5 class="">dsdsd</h5>
+                            <p>dsdsdsd</p>
+                        </div>
+                    </div>
+                    <div class="cards__blocfor">
+                        <img class="cards__blocfor__img" src="image/deauville.jpg" alt="">
+                        <div class="cards__blocfor__bas">
+                            <h5 class="">dsdsd</h5>
+                            <p>dsdsdsd</p>
+                        </div>
+                    </div>
+
+
+                    <!-- <div class="cards__1">
+                        <img class="cards__1__img" src="image/chamonix.jpg" alt="chamonix">
+                        <div class="cards__1__cards">
+                            <p class="cards__1__cards__titre">Chamonix-Mont-Blanc
+                            </p><br>
+                            <p class="cards__1__cards__texte">à 473 kilomètre
+                            </p>
+                        </div>
+                    </div>
+                    <div id="cards__1" class="cards__1">
+                        <img id="cards__2__imgCards1" class="cards__2__imgCards1" src="image/bresse.jpg" alt="bresse">
+                        <p id="cards__2__titreImg" class="cards__2__titreImg">La Bresse</p><br>
+                        <p id="cards__2__texteCards" class="cards__2__texteCards">à 349 kilomètres</p>
+                    </div>
+                    <div id="cards__1" class="cards__1">
+                        <img id="cards__1__imgCards1" class="cards__1__imgCards1" src="image/rousse.jpg" alt="Rousses">
+                        <p id="cards__1__titreImg" class="cards__1__titreImg">Les Rousses</p><br>
+                        <p id="cards__1__texteCards" class="cards__1__texteCards">à 385 kilomètres</p>
+                    </div>
+                    <div id="cards__1" class="cards__1">
+                        <img id="cards__1__imgCards1" class="cards__1__imgCards1" src="image/deauville.jpg"
+                            alt="Deauville">
+                        <p id="cards__1__titreImg" class="cards__1__titreImg">Deauville</p><br>
+                        <p id="cards__1__texteCards" class="cards__1__texteCards">à 173 kilomètres</p>
+                    </div> -->
                 </div>
-                <div id="cards1">
-                    <img id="img cards2" src="" alt="">
-                    <p id="titreImg"></p><br>
-                    <p id="texteCards"></p>
+            </section>
+            <!-- cards deux aligné, une en dessous -->
+            <section id="section3">
+                <h4>Découvrez les expériences Airbnb</h4>
+                <div id="">
+                    <div id="cardsSecond1">
+                        <p id="titreImg">Des expériences
+                            à vivre pendant
+                            votre voyage</p>
+                        <button id="buttonCards">Expériences</button>
+                    </div>
+                    <div id="cardsSecond2">
+                        <p id="titreImg">Des expériences
+                            à vivre
+                            de chez vous</p>
+                        <button id="buttonCards">Expériences en ligne</button>
+                    </div>
+                    <div id="cardsSecond3">
+                        <p id="titreImg">Des questions
+                            sur l'accueil
+                            de voyageurs ?</p>
+                        <button id="buttonCards">Discutez avec un Superhôte</button>
+                    </div>
                 </div>
-                <div id="cards1">
-                    <img id="img cards3" src="" alt="">
-                    <p id="titreImg"></p><br>
-                    <p id="texteCards"></p>
-                </div>
-                <div id="cards1">
-                    <img id="img cards4" src="" alt="">
-                    <p id="titreImg"></p><br>
-                    <p id="texteCards"></p>
-                </div>
-            </div>
-        </section>
-        <!-- cards deux aligné, une en dessous -->
-        <section id="section3">
-            <h4>Découvrez les expériences Airbnb</h4>
-            <div id="">
-                <div id="cardsSecond1">
-                    <p id="titreImg">Des expériences
-                        à vivre pendant
-                        votre voyage</p>
-                    <button id="buttonCards">Expériences</button>
-                </div>
-                <div id="cardsSecond2">
-                    <p id="titreImg">Des expériences
-                        à vivre
-                        de chez vous</p>
-                    <button id="buttonCards">Expériences en ligne</button>
-                </div>
-                <div id="cardsSecond3">
-                    <p id="titreImg">Des questions
-                        sur l'accueil
-                        de voyageurs ?</p>
-                    <button id="buttonCards">Discutez avec un Superhôte</button>
-                </div>
-            </div>
-        </section>
-        <!-- menu en fonction des endroits -->
-        <section id="section4">
-            <h4>Des idées pour vos prochaines escapades</h4>
-            <ul>
-                <li>Bord de mer</li>
-                <li>Sports d'hiver</li>
-                <li>Montagne</li>
-                <li> Autres destinations populaires</li>
-            </ul>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-            <p id="titreVille"></p>
-            <p id="region"></p>
-        </section>
+            </section>
+            <!-- menu en fonction des endroits -->
+            <section id="section4">
+                <h4>Des idées pour vos prochaines escapades</h4>
+                <ul>
+                    <li>Bord de mer</li>
+                    <li>Sports d'hiver</li>
+                    <li>Montagne</li>
+                    <li> Autres destinations populaires</li>
+                </ul>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+                <p id="titreVille"></p>
+                <p id="region"></p>
+            </section>
+        </article>
     </main>
 
     <footer id="footer">
@@ -184,12 +222,12 @@
                 u site</a></li>
                 <li><a href="">Infos sur l'entreprise</a></li>
                 </ul>
-                <img src="globeblack.png" alt="globeblack">
+                <img src="image/globeblack.png" alt="globeblack">
                 <a href="">Français (FR)</a>
                 <a href="">€ EUR</a>
-                <img src="facebook-app-symbol.png" alt="facebbok">
-                <img src="twitter.png" alt="twitter">
-                <img src="instagram.png" alt="instagram.png">
+                <img src="image/facebook-app-symbol.png" alt="facebbok">
+                <img src="image/twitter.png" alt="twitter">
+                <img src="image/instagram.png" alt="instagram.png">
             </div>
 
     </footer>
