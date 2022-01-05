@@ -17,10 +17,10 @@
             <h1>airbnb</h1>
             <a id="navbar__hote" class="navbar__hote" href="#">Devenez hôte</a>
             <img id="navbar__globe" class="navbar__globe" src="image/globe.png" alt="globe.png">
-            <div id="navbar__MenuDeroulant" class="navbar__MenuDeroulant">
-                <img src="image/connec.png" class="navbar__MenuDeroulant__connec" id="MenuDeroulant__connec"
-                    alt="connec.png">
-            </div>
+            <!-- <div id="navbar__MenuDeroulant" class="navbar__MenuDeroulant"> -->
+            <img src="image/connec.png" class="navbar__MenuDeroulant__connec" id="MenuDeroulant__connec"
+                alt="connec.png">
+            <!-- </div> -->
         </nav>
         <!-- listing de titre de recherche -->
         <ul class="liste" id="liste">
@@ -29,29 +29,29 @@
             <li id="liste__titre" class="liste__titre">Expériences en ligne</li>
         </ul>
         <!-- menu de recherche -->
-        <div id="recherche" class="recherche">
-
-            <div id="recherche__element" class="recherche__element">
-                <h2>Adresse</h2>
-                <p>Où allez vous ?</p>
-            </div>
-            <div id="recherche__element" class="recherche__element">
-                <h2>Arrivée</h2>
-                <p>Quand ?</p>
-            </div>
-            <div id="recherche__element" class="recherche__element">
-                <h2>Départ</h2>
-                <p>Quand ?</p>
-            </div>
-            <div id="recherche__element" class="recherche__element">
-                <div class="recherche__element__last" id="recherche__element__last">
-                    <h2>Voyageurs</h2>
-                    <p>Qui ?</p>
+        <div class="recherche">
+            <form class="recherche__form" action="get">
+                <div class="recherche__form__element">
+                    <label for="">Adresse</label>
+                    <input type="text" name="Où allez vous ?" placeholder="Où allez vous ?" id="name" required>
                 </div>
-                <button id="recherche__element__buttonSearch" class="recherche__element__buttonSearch">
+                <div class="recherche__form__element">
+                    <label for="">Arrivée</label>
+                    <input type="date" name="Quand ? " placeholder="Quand ?" id="name" required>
+                </div>
+                <div class="recherche__form__element">
+                    <label for="">Départ</label>
+                    <input type="date" name="Quand ?" placeholder="Quand ?" id="name" required>
+                </div>
+                <div class="recherche__form__element">
+                    <label for="">Voyageurs</label>
+                    <input type="text" name="Qui ? " placeholder="Qui ?" id="name" required>
+                </div>
+                <button class="recherche__element__buttonSearch annulebouton">
                     <img class="loupe" id="loupe" src="image/loupe.png" alt="loupe.png">
                 </button>
-            </div>
+
+            </form>
         </div>
     </header>
 
@@ -60,9 +60,11 @@
         <!-- première image-->
         <section class="section1">
             <div id="firstimg" class="firstimg">
-                <p id="firstimg__titreImg" class="firstimg__titreImg">Vous ne savez pas où partir?</p><br>
-                <p id="firstimg__titreImg" class="firstimg__titreImg"> Parfait.</p> <br>
-                <button id="firstimg__buttonImgFirst" class="firstimg__buttonImgFirst">Je suis flexible</button>
+                <div class="firstimg__grid">
+                    <p class="firstimg__grid__titreImg">Vous ne savez pas où partir?</p><br>
+                    <p class="firstimg__grid__titreImg"> Parfait.</p> <br>
+                    <button class="firstimg__grid__button">Je suis flexible</button>
+                </div>
             </div>
             <!-- 2eme image -->
             <div id="secondImg" class="secondImg">
@@ -104,56 +106,29 @@
                             <p>à 385 kilomètres</p>
                         </div>
                     </div>
-
-
-                    <!-- <div class="cards__1">
-                        <img class="cards__1__img" src="image/chamonix.jpg" alt="chamonix">
-                        <div class="cards__1__cards">
-                            <p class="cards__1__cards__titre">Chamonix-Mont-Blanc
-                            </p><br>
-                            <p class="cards__1__cards__texte">à 473 kilomètre
-                            </p>
-                        </div>
-                    </div>
-                    <div id="cards__1" class="cards__1">
-                        <img id="cards__2__imgCards1" class="cards__2__imgCards1" src="image/bresse.jpg" alt="bresse">
-                        <p id="cards__2__titreImg" class="cards__2__titreImg">La Bresse</p><br>
-                        <p id="cards__2__texteCards" class="cards__2__texteCards">à 349 kilomètres</p>
-                    </div>
-                    <div id="cards__1" class="cards__1">
-                        <img id="cards__1__imgCards1" class="cards__1__imgCards1" src="image/rousse.jpg" alt="Rousses">
-                        <p id="cards__1__titreImg" class="cards__1__titreImg">Les Rousses</p><br>
-                        <p id="cards__1__texteCards" class="cards__1__texteCards">à 385 kilomètres</p>
-                    </div>
-                    <div id="cards__1" class="cards__1">
-                        <img id="cards__1__imgCards1" class="cards__1__imgCards1" src="image/deauville.jpg"
-                            alt="Deauville">
-                        <p id="cards__1__titreImg" class="cards__1__titreImg">Deauville</p><br>
-                        <p id="cards__1__texteCards" class="cards__1__texteCards">à 173 kilomètres</p>
-                    </div> -->
                 </div>
             </section>
             <!-- cards deux aligné, une en dessous -->
             <section id="section3">
                 <h4>Découvrez les expériences Airbnb</h4>
-                <div id="">
-                    <div id="cardsSecond1">
-                        <p id="titreImg">Des expériences
+                <div class="affiche">
+                    <div class="affiche__expo canione">
+                        <p class="affiche__expo__titre">Des expériences
                             à vivre pendant
                             votre voyage</p>
-                        <button id="buttonCards">Expériences</button>
+                        <button class="affiche__expo__btn">Expériences</button>
                     </div>
-                    <div id="cardsSecond2">
-                        <p id="titreImg">Des expériences
+                    <div class="affiche__expo campville">
+                        <p class="affiche__expo__titre">Des expériences
                             à vivre
                             de chez vous</p>
-                        <button id="buttonCards">Expériences en ligne</button>
+                        <button class="affiche__expo__btn">Expériences en ligne</button>
                     </div>
-                    <div id="cardsSecond3">
-                        <p id="titreImg">Des questions
+                    <div class="affiche__expo campmer">
+                        <p class="affiche__expo__titre">Des questions
                             sur l'accueil
                             de voyageurs ?</p>
-                        <button id="buttonCards">Discutez avec un Superhôte</button>
+                        <button class="affiche__expo__btn">Discutez avec un Superhôte</button>
                     </div>
                 </div>
             </section>

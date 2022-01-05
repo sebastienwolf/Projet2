@@ -2,7 +2,7 @@ $headerColor: #000000;
 $mainColor:#ffffff;
 $footerColor:#afa7a7;
 $bordure: solid 1px black;
-$radius: 50px;
+$radius: 50px 50px 50px 50px;
 
 @mixin tailleSigle {
     width: 30px;
@@ -17,6 +17,7 @@ $radius: 50px;
     background-size: cover;
     background-repeat: no-repeat;
     margin: 0 auto;
+    color: $mainColor;
 
 }
 
