@@ -1,9 +1,6 @@
 body {
   margin: 0;
-}
-
-header {
-  background-color: #000000;
+  background: #000000;
 }
 
 h1 {
@@ -17,16 +14,25 @@ h1 {
   display: inline-block;
 }
 
+.navbar__hote {
+  color: #ffffff;
+  list-style-type: none;
+  margin-left: 1200px;
+}
+
 .navbar__globe {
   width: 30px;
   height: 30px;
   display: inline-block;
+  margin-left: 10px;
 }
 
 .navbar__MenuDeroulant {
   background-color: #ffffff;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
   display: inline-block;
+  margin-left: 10px;
+  width: 60px;
 }
 
 .navbar__MenuDeroulant__connec {
@@ -47,17 +53,17 @@ h1 {
 }
 
 .recherche {
-  width: 900px;
+  width: 60%;
   margin: 0 auto;
   background-color: #ffffff;
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50px;
 }
 
 .recherche__element {
   display: inline-block;
   background-color: #ffffff;
-  width: 200px;
-  border: solid 1px black;
+  width: 23%;
+  border-right: solid 1px black;
 }
 
 .recherche__element__last {
@@ -74,5 +80,61 @@ h1 {
 .loupe {
   width: 20px;
   height: 20px;
+}
+
+.section1 {
+  background-color: #000000;
+}
+
+.section1 {
+  background: -webkit-gradient(linear, left top, left bottom, from(black), to(white));
+  background: linear-gradient(black, white);
+}
+
+main {
+  background: #ffffff;
+}
+
+.firstimg {
+  background-image: url("image/firstimage.jpg");
+  width: 90%;
+  height: 800px;
+  border-radius: 35px 35px 35px 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.secondImg {
+  background-image: url("image/cartcadeau.jpg");
+  width: 90%;
+  height: 800px;
+  border-radius: 35px 35px 35px 35px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin: 0 auto;
+}
+
+.cards__bloc {
+  width: 20%;
+  height: 400px;
+  border-radius: 30px;
+  background-color: red;
+  margin-left: 10px;
+}
+
+.cards__bloc__img {
+  width: 100%;
+  height: 50%;
+  border-radius: 30px 30px 0px 0px;
+}
+
+.cards__bloc__bas {
+  height: 50%;
+  color: yellow;
+}
+
+footer {
+  background-color: #afa7a7;
 }
 /*# sourceMappingURL=style.css.map */
