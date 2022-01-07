@@ -3,47 +3,49 @@ body {
   background: #000000;
 }
 
+/* header */
+/* navabar */
 h1 {
   color: #ffffff;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
+/* logo airbnb */
 .navbar__logo {
   width: 60px;
   height: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
+}
+
+/* parti de gauche */
+.header_left {
+  display: flex;
+  flex-direction: row;
+}
+
+/* parti de droite */
+.headr_right {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
 }
 
 .navbar__hote {
   color: #ffffff;
   list-style-type: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-item-align: stretch;
-      align-self: stretch;
-  margin-left: 1200px;
+  align-self: stretch;
 }
 
 .navbar__globe {
   width: 30px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
 }
@@ -51,8 +53,6 @@ h1 {
 .navbar__MenuDeroulant {
   background-color: #ffffff;
   border-radius: 50px 50px 50px 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   margin-left: 10px;
   width: 60px;
@@ -61,17 +61,13 @@ h1 {
 .navbar__MenuDeroulant__connec {
   width: 30px;
   height: 30px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
+/* fin navbar */
+/* liste 3 titre */
 .liste {
   list-style-type: none;
   text-align: center;
@@ -83,6 +79,7 @@ h1 {
   margin: 30px 0px 0px 30px;
 }
 
+/* barre de recherche */
 .recherche {
   width: 60%;
   margin: 0 auto;
@@ -91,32 +88,20 @@ h1 {
 }
 
 .recherche__form {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-line-pack: justify;
-      align-content: space-between;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex-direction: row;
+  align-content: space-between;
+  justify-content: center;
 }
 
 .recherche__form__element {
   background-color: #ffffff;
   width: 18%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
 }
 
+/* bouton loupe */
 input {
   width: 120px;
   border: none;
@@ -134,6 +119,13 @@ input {
   background-color: red;
 }
 
+/* fin du header */
+/* main */
+main {
+  background: #ffffff;
+}
+
+/* section 1 */
 .section1 {
   background-color: #000000;
 }
@@ -143,10 +135,8 @@ input {
   background: linear-gradient(black, white);
 }
 
-main {
-  background: #ffffff;
-}
 
+/* first img */
 .firstimg {
   background-image: url("image/firstimage.jpg");
   width: 90%;
@@ -159,21 +149,14 @@ main {
 }
 
 .firstimg__grid {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
+/* texte de l'image */
 .firstimg__grid__titreImg {
   color: #ffffff;
   font-weight: bolder;
@@ -190,6 +173,7 @@ main {
   font-size: 20px;
 }
 
+/* second img */
 .secondImg {
   background-image: url("image/cartcadeau.jpg");
   width: 90%;
@@ -201,90 +185,93 @@ main {
   color: #ffffff;
 }
 
+/* section2 */
+/* cards  */
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+
 }
 
+/* cards bloc */
 .cards__bloc {
-  width: 20%;
+  width: 300px;
   height: 400px;
   border-radius: 30px 30px 30px 30px;
 }
 
+/* cards top img */
 .cards__bloc__ville {
-  width: 100%;
+  width: 300px;
   height: 50%;
   border-radius: 30px 30px 0 0;
 }
 
+/* bottom cards color texte */
 .cards__bloc__bas {
   height: 50%;
   color: yellow;
 }
 
+/* cards 1 bgcolor*/
 .rose {
   background-color: #d114b8;
 }
 
+/* cards 2 bgcolor */
 .violet {
   background-color: #5e1654;
 }
 
+/* cards 3 bgcolor */
 .pourpre {
   background-color: #ff00dd;
 }
 
+/* cards 4 bgcolor */
 .rousses {
   background-color: #d11443;
 }
 
 /* les trois cards */
 .affiche {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -ms-flex-line-pack: distribute;
-      align-content: space-around;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
+  justify-content: space-evenly;
+  align-content: space-around;
+  flex-flow: row wrap;
+  flex-wrap: wrap;
 }
 
+/* section 3 */
+/* form image */
 .affiche__expo {
-  width: 45%;
+  width: 700px;
   height: 500px;
   border-radius: 30px;
   background-size: cover;
 }
 
+/* img 1 */
 .canione {
   background-image: url("image/cd.jpg");
 }
 
+/* img 2 */
 .campville {
   background-image: url("image/camping_nuit.jpg");
 }
 
+/* img 3 */
 .campmer {
   background-image: url("image/campingcar.jpg");
   width: 90%;
   margin-top: 25px;
 }
 
+
+
 footer {
   background-color: #afa7a7;
 }
-/*# sourceMappingURL=style.css.map */
