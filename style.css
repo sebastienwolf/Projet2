@@ -56,6 +56,7 @@ h1 {
 .navbar {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
 
 /* logo airbnb */
@@ -65,11 +66,17 @@ h1 {
   display: flex;
 }
 
-/* parti de droite */
-.headr_right {
-  margin-left: 50%;
+/* parti de gauche */
+.header_left {
   display: flex;
   flex-direction: row;
+}
+
+/* parti de droite */
+.headr_right {
+  display: flex;
+  flex-direction: row;
+  align-self: center;
 }
 
 .navbar__hote {
