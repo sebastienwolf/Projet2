@@ -1,0 +1,12 @@
+Bonjour,
+
+Bienvenue à un entrainement.
+
+il a fallut refaire une page d'accueil.
+Nous avons eu une semaine pour faire une branch avec :
+-SASS
+-Flexbox
+-Bootstrap
+-Mediaqueries
+
+(ceci est la 2émé semaine de formation)
